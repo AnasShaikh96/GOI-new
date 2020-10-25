@@ -13,16 +13,21 @@ background:#14274E;
 
 .CarouselContent{
     background:rgba(0,0,0,.5);
-    text-align: justify;
+    text-align: left;
     padding-left: 10px;
     min-height: 250px;
-
+    overflow:hidden;
+    padding-bottom:5px;
     
 }
 
 .AccordionHeader{
     font-weight:bold;
     color:white;
+    transition:all 200ms;
+}
+.AccordionHeader:focus{
+    color:#8fb7e5;
 }
 .AccordionHeader:after{
 position: absolute;
@@ -33,7 +38,12 @@ padding-right:10px;
     content:"\f078";
     font-size:20px;
     font-weight:lighter;
+    transition: all 200ms;
 }
+.AccordionHeader:focus:after{
+    transform:rotate(-90deg)
+}
+
 .FooterLink{
     font-size:.8em;
     flex:row;
