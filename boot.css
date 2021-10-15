@@ -25,10 +25,15 @@ background:#14274E;
     font-weight:bold;
     color:white;
     transition:all 200ms;
+
 }
+.AccordionHeader > button{
+  color:white;  
+} 
 .AccordionHeader:focus{
     color:#8fb7e5;
 }
+
 .AccordionHeader:after{
 position: absolute;
 right:0 ;
